@@ -1,0 +1,33 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg:        #0d0d0d;
+  --bg-card:   #111111;
+  --bg-input:  #0a0a0a;
+  --border:    #222222;
+  --border-hi: #2e2e2e;
+  --text:      #f0ede6;
+  --text-muted:#555555;
+  --accent:    #c6ff57;
+  --danger:    #ff5757;
+  --info:      #57d9ff;
+  --font-display: 'Syne', sans-serif;
+  --font-mono:    'DM Mono', monospace;
+}
+
+html { font-size: 16px; }
+
+body {
+  font-family: var(--font-mono);
+  background-color: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+button { cursor: pointer; }
+input  { outline: none; }

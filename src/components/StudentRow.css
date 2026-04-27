@@ -1,0 +1,75 @@
+.cell-idx {
+  color: var(--border-hi);
+  font-size: 11px;
+  letter-spacing: 0.05em;
+}
+
+.cell-name {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.score-input {
+  width: 80px;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  padding: 7px 10px;
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 14px;
+  transition: border-color 0.2s ease;
+  -moz-appearance: textfield;
+}
+
+.score-input::-webkit-inner-spin-button,
+.score-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.score-input:focus {
+  border-color: var(--accent);
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 4px 13px;
+  border-radius: 999px;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.badge--pass {
+  background: rgba(198, 255, 87, 0.1);
+  color: var(--accent);
+  border: 1px solid rgba(198, 255, 87, 0.25);
+}
+
+.badge--fail {
+  background: rgba(255, 87, 87, 0.1);
+  color: var(--danger);
+  border: 1px solid rgba(255, 87, 87, 0.25);
+}
+
+/* Delete button */
+.delete-btn {
+  background: none;
+  border: none;
+  color: var(--border-hi);
+  font-size: 14px;
+  padding: 5px 8px;
+  border-radius: 6px;
+  line-height: 1;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.delete-btn:hover {
+  color: var(--danger);
+  background: rgba(255, 87, 87, 0.08);
+}
